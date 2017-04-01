@@ -9,8 +9,7 @@ touch .env.app1
 2.  Open env file with text editor and add environment.
 ```
 # Loaded from `fastlane <lane> --env app1`
-SCHEME=App1
-CONFIG=Release
+SCHEME=App1 # target name
 BUNDLE_ID=com.yourcompany.app1
 METADATA=fastlane/metadata-app1
 SCREENSHOTS=fastlane/screenshots-app1
@@ -20,11 +19,11 @@ SCREENSHOTS=fastlane/screenshots-app1
 Run command in terminal, replace metadata_path, screenshots_path and app_identifier to your owned.
 1.  Download metadata
 ```
-deliver download_metadata --metadata_path fastlane/metadata-app1 --app_identifier com.yourcompany.App1
+deliver download_metadata --metadata_path fastlane/metadata-app1 --app_identifier com.yourcompany.app1
 ```
 2.  download screenshots
 ```
-deliver download_screenshots --screenshots_path fastlane/screenshots-app1 --app_identifier com.yourcompany.App1
+deliver download_screenshots --screenshots_path fastlane/screenshots-app1 --app_identifier com.yourcompany.app1
 ```
 
 # Setting Fastfile
